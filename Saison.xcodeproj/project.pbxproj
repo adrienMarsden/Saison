@@ -14,6 +14,23 @@
 		F47B129B1B2E0534004D5654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47B129A1B2E0534004D5654 /* Images.xcassets */; };
 		F47B129E1B2E0534004D5654 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47B129C1B2E0534004D5654 /* LaunchScreen.xib */; };
 		F47B12AA1B2E0534004D5654 /* SaisonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B12A91B2E0534004D5654 /* SaisonTests.swift */; };
+		F47B12B41B2E086C004D5654 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47B12B31B2E086C004D5654 /* CoreLocation.framework */; };
+		F47B12B61B2E0878004D5654 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F47B12B51B2E0878004D5654 /* MapKit.framework */; };
+		F47B12C31B2E5152004D5654 /* background@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12B71B2E5152004D5654 /* background@1x.png */; };
+		F47B12C41B2E5152004D5654 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12B81B2E5152004D5654 /* background@2x.png */; };
+		F47B12C51B2E5152004D5654 /* background@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12B91B2E5152004D5654 /* background@3x.png */; };
+		F47B12C61B2E5152004D5654 /* Get Car Button.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BA1B2E5152004D5654 /* Get Car Button.png */; };
+		F47B12C71B2E5152004D5654 /* Get Car Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BB1B2E5152004D5654 /* Get Car Button@2x.png */; };
+		F47B12C81B2E5152004D5654 /* Get Car Button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BC1B2E5152004D5654 /* Get Car Button@3x.png */; };
+		F47B12C91B2E5152004D5654 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BD1B2E5152004D5654 /* logo.png */; };
+		F47B12CA1B2E5152004D5654 /* more .png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BE1B2E5152004D5654 /* more .png */; };
+		F47B12CB1B2E5152004D5654 /* set car button.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12BF1B2E5152004D5654 /* set car button.png */; };
+		F47B12CC1B2E5152004D5654 /* set car button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12C01B2E5152004D5654 /* set car button@2x.png */; };
+		F47B12CD1B2E5152004D5654 /* set car button@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12C11B2E5152004D5654 /* set car button@3x.png */; };
+		F47B12CE1B2E5152004D5654 /* share button.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12C21B2E5152004D5654 /* share button.png */; };
+		F47B12D31B2E8D24004D5654 /* current location.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12D01B2E8D24004D5654 /* current location.png */; };
+		F47B12D41B2E8D24004D5654 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12D11B2E8D24004D5654 /* map.png */; };
+		F47B12D51B2E8D24004D5654 /* orbit.png in Resources */ = {isa = PBXBuildFile; fileRef = F47B12D21B2E8D24004D5654 /* orbit.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +55,23 @@
 		F47B12A31B2E0534004D5654 /* SaisonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaisonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47B12A81B2E0534004D5654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47B12A91B2E0534004D5654 /* SaisonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaisonTests.swift; sourceTree = "<group>"; };
+		F47B12B31B2E086C004D5654 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F47B12B51B2E0878004D5654 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F47B12B71B2E5152004D5654 /* background@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@1x.png"; path = "../../../sketch/saiss/background@1x.png"; sourceTree = "<group>"; };
+		F47B12B81B2E5152004D5654 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@2x.png"; path = "../../../sketch/saiss/background@2x.png"; sourceTree = "<group>"; };
+		F47B12B91B2E5152004D5654 /* background@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "background@3x.png"; path = "../../../sketch/saiss/background@3x.png"; sourceTree = "<group>"; };
+		F47B12BA1B2E5152004D5654 /* Get Car Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Get Car Button.png"; path = "../../../sketch/saiss/Get Car Button.png"; sourceTree = "<group>"; };
+		F47B12BB1B2E5152004D5654 /* Get Car Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Get Car Button@2x.png"; path = "../../../sketch/saiss/Get Car Button@2x.png"; sourceTree = "<group>"; };
+		F47B12BC1B2E5152004D5654 /* Get Car Button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Get Car Button@3x.png"; path = "../../../sketch/saiss/Get Car Button@3x.png"; sourceTree = "<group>"; };
+		F47B12BD1B2E5152004D5654 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../sketch/saiss/logo.png; sourceTree = "<group>"; };
+		F47B12BE1B2E5152004D5654 /* more .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "more .png"; path = "../../../sketch/saiss/more .png"; sourceTree = "<group>"; };
+		F47B12BF1B2E5152004D5654 /* set car button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "set car button.png"; path = "../../../sketch/saiss/set car button.png"; sourceTree = "<group>"; };
+		F47B12C01B2E5152004D5654 /* set car button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "set car button@2x.png"; path = "../../../sketch/saiss/set car button@2x.png"; sourceTree = "<group>"; };
+		F47B12C11B2E5152004D5654 /* set car button@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "set car button@3x.png"; path = "../../../sketch/saiss/set car button@3x.png"; sourceTree = "<group>"; };
+		F47B12C21B2E5152004D5654 /* share button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "share button.png"; path = "../../../sketch/saiss/share button.png"; sourceTree = "<group>"; };
+		F47B12D01B2E8D24004D5654 /* current location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "current location.png"; path = "../../../sketch/saiss/current location.png"; sourceTree = "<group>"; };
+		F47B12D11B2E8D24004D5654 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map.png; path = ../../../sketch/saiss/map.png; sourceTree = "<group>"; };
+		F47B12D21B2E8D24004D5654 /* orbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = orbit.png; path = ../../../sketch/saiss/orbit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47B12B61B2E0878004D5654 /* MapKit.framework in Frameworks */,
+				F47B12B41B2E086C004D5654 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +97,8 @@
 		F47B12821B2E0534004D5654 = {
 			isa = PBXGroup;
 			children = (
+				F47B12B51B2E0878004D5654 /* MapKit.framework */,
+				F47B12B31B2E086C004D5654 /* CoreLocation.framework */,
 				F47B128D1B2E0534004D5654 /* Saison */,
 				F47B12A61B2E0534004D5654 /* SaisonTests */,
 				F47B128C1B2E0534004D5654 /* Products */,
@@ -81,6 +119,7 @@
 			children = (
 				F47B12901B2E0534004D5654 /* AppDelegate.swift */,
 				F47B12951B2E0534004D5654 /* ViewController.swift */,
+				F47B12CF1B2E5161004D5654 /* icons */,
 				F47B12971B2E0534004D5654 /* Main.storyboard */,
 				F47B129A1B2E0534004D5654 /* Images.xcassets */,
 				F47B129C1B2E0534004D5654 /* LaunchScreen.xib */,
@@ -113,6 +152,28 @@
 				F47B12A81B2E0534004D5654 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F47B12CF1B2E5161004D5654 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F47B12D01B2E8D24004D5654 /* current location.png */,
+				F47B12D11B2E8D24004D5654 /* map.png */,
+				F47B12D21B2E8D24004D5654 /* orbit.png */,
+				F47B12B71B2E5152004D5654 /* background@1x.png */,
+				F47B12B81B2E5152004D5654 /* background@2x.png */,
+				F47B12B91B2E5152004D5654 /* background@3x.png */,
+				F47B12BA1B2E5152004D5654 /* Get Car Button.png */,
+				F47B12BB1B2E5152004D5654 /* Get Car Button@2x.png */,
+				F47B12BC1B2E5152004D5654 /* Get Car Button@3x.png */,
+				F47B12BD1B2E5152004D5654 /* logo.png */,
+				F47B12BE1B2E5152004D5654 /* more .png */,
+				F47B12BF1B2E5152004D5654 /* set car button.png */,
+				F47B12C01B2E5152004D5654 /* set car button@2x.png */,
+				F47B12C11B2E5152004D5654 /* set car button@3x.png */,
+				F47B12C21B2E5152004D5654 /* share button.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +225,7 @@
 				TargetAttributes = {
 					F47B128A1B2E0534004D5654 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 2KN96AWUQ5;
 					};
 					F47B12A21B2E0534004D5654 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -196,8 +258,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F47B12991B2E0534004D5654 /* Main.storyboard in Resources */,
+				F47B12C51B2E5152004D5654 /* background@3x.png in Resources */,
+				F47B12C81B2E5152004D5654 /* Get Car Button@3x.png in Resources */,
+				F47B12D31B2E8D24004D5654 /* current location.png in Resources */,
+				F47B12CA1B2E5152004D5654 /* more .png in Resources */,
+				F47B12C31B2E5152004D5654 /* background@1x.png in Resources */,
 				F47B129E1B2E0534004D5654 /* LaunchScreen.xib in Resources */,
+				F47B12C71B2E5152004D5654 /* Get Car Button@2x.png in Resources */,
+				F47B12C91B2E5152004D5654 /* logo.png in Resources */,
+				F47B12C61B2E5152004D5654 /* Get Car Button.png in Resources */,
+				F47B12C41B2E5152004D5654 /* background@2x.png in Resources */,
+				F47B12D41B2E8D24004D5654 /* map.png in Resources */,
 				F47B129B1B2E0534004D5654 /* Images.xcassets in Resources */,
+				F47B12CD1B2E5152004D5654 /* set car button@3x.png in Resources */,
+				F47B12CB1B2E5152004D5654 /* set car button.png in Resources */,
+				F47B12CC1B2E5152004D5654 /* set car button@2x.png in Resources */,
+				F47B12D51B2E8D24004D5654 /* orbit.png in Resources */,
+				F47B12CE1B2E5152004D5654 /* share button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +421,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Saison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -354,16 +434,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Saison/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		F47B12B11B2E0534004D5654 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -382,7 +464,6 @@
 		F47B12B21B2E0534004D5654 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -413,6 +494,7 @@
 				F47B12AF1B2E0534004D5654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F47B12B01B2E0534004D5654 /* Build configuration list for PBXNativeTarget "SaisonTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +503,7 @@
 				F47B12B21B2E0534004D5654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

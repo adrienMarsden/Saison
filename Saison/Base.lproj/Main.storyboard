@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Saison" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bVP-R9-z9B">
+                                <rect key="frame" x="0.0" y="87" width="320" height="386"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="386" id="0ry-uq-NjC"/>
+                                </constraints>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="X02-Fz-1h0" propertyAccessControl="all">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orbit.png" translatesAutoresizingMaskIntoConstraints="NO" id="qmJ-lJ-Dfd">
+                                <rect key="frame" x="23" y="147" width="276" height="276"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="2dO-19-nt5"/>
+                                    <constraint firstAttribute="height" constant="276" id="yyJ-TM-FZt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEZ-5G-jg6">
+                                <rect key="frame" x="16" y="422" width="288" height="80"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.25832544191919193" green="0.25832544191919193" blue="0.25832544191919193" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-AG-fRf">
+                                <rect key="frame" x="16" y="510" width="64" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aOz-yZ-7iD"/>
+                                    <constraint firstAttribute="width" constant="64" id="lzp-qu-pf4"/>
+                                </constraints>
+                                <state key="normal" title="set" image="set car button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveCarLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JYw-ee-bDt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft8-nU-KHb">
+                                <rect key="frame" x="231" y="510" width="73" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KTa-7j-mBg"/>
+                                    <constraint firstAttribute="width" constant="73" id="sKd-Rl-KqP"/>
+                                </constraints>
+                                <state key="normal" title="get" image="Get Car Button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getCarLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Etg-02-aEE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z1O-cS-oNy">
+                                <rect key="frame" x="54" y="45" width="213" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Q9n-AD-X0k"/>
+                                    <constraint firstAttribute="width" constant="213" id="bY2-gv-M0x"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uf-td-IGM">
+                                <rect key="frame" x="218" y="341" width="66" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="dGh-H5-zJF"/>
+                                    <constraint firstAttribute="width" constant="66" id="eaz-BJ-UV7"/>
+                                </constraints>
+                                <state key="normal" image="map.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openInMap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZpO-sG-qrd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oc-7g-wRQ">
+                                <rect key="frame" x="16" y="187" width="52" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="ePl-cY-1Qu"/>
+                                    <constraint firstAttribute="height" constant="47" id="v6M-BQ-exz"/>
+                                </constraints>
+                                <state key="normal" image="current location.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToCurrentLocation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NjY-YX-pYC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="z1O-cS-oNy" secondAttribute="centerX" id="6CW-UU-p5D"/>
+                            <constraint firstItem="X02-Fz-1h0" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="AkD-xZ-Owb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="X02-Fz-1h0" secondAttribute="trailing" constant="-16" id="CgO-Ez-Zbo"/>
+                            <constraint firstItem="mEZ-5G-jg6" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="DBN-wf-qSU"/>
+                            <constraint firstItem="X02-Fz-1h0" firstAttribute="leading" secondItem="1Oc-7g-wRQ" secondAttribute="trailing" constant="-68" id="G7D-Np-HsL"/>
+                            <constraint firstItem="X02-Fz-1h0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Hlz-qA-WHJ"/>
+                            <constraint firstItem="X02-Fz-1h0" firstAttribute="top" secondItem="z1O-cS-oNy" secondAttribute="bottom" constant="-133" id="MH8-gl-XD3"/>
+                            <constraint firstItem="6uf-td-IGM" firstAttribute="top" secondItem="X02-Fz-1h0" secondAttribute="bottom" constant="-227" id="Sa8-2C-vH5"/>
+                            <constraint firstItem="OJt-AG-fRf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="UVG-mg-jYP"/>
+                            <constraint firstAttribute="centerY" secondItem="qmJ-lJ-Dfd" secondAttribute="centerY" constant="-1" id="V8R-mX-gVb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ft8-nU-KHb" secondAttribute="bottom" constant="18" id="Xrp-nz-L9E"/>
+                            <constraint firstItem="OJt-AG-fRf" firstAttribute="top" secondItem="mEZ-5G-jg6" secondAttribute="bottom" constant="8" id="YEk-5W-Ele"/>
+                            <constraint firstAttribute="centerX" secondItem="qmJ-lJ-Dfd" secondAttribute="centerX" constant="-1" id="Yv0-Qy-XMz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bVP-R9-z9B" secondAttribute="trailing" constant="-16" id="Zv7-jJ-biP"/>
+                            <constraint firstItem="Ft8-nU-KHb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="bi7-ei-IVF"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="X02-Fz-1h0" secondAttribute="bottom" id="bki-zA-cPc"/>
+                            <constraint firstItem="mEZ-5G-jg6" firstAttribute="top" secondItem="X02-Fz-1h0" secondAttribute="bottom" constant="-146" id="jJ6-9S-yai"/>
+                            <constraint firstItem="mEZ-5G-jg6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="kgK-89-P6V"/>
+                            <constraint firstItem="bVP-R9-z9B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="nOM-Uh-Ead"/>
+                            <constraint firstAttribute="centerY" secondItem="bVP-R9-z9B" secondAttribute="centerY" constant="4" id="qXr-Fd-Lia"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OJt-AG-fRf" secondAttribute="bottom" constant="18" id="tzB-5N-Yw9"/>
+                            <constraint firstItem="X02-Fz-1h0" firstAttribute="top" secondItem="1Oc-7g-wRQ" secondAttribute="bottom" constant="-234" id="ucc-KV-J0U"/>
+                            <constraint firstItem="6uf-td-IGM" firstAttribute="leading" secondItem="X02-Fz-1h0" secondAttribute="trailing" constant="-102" id="ydF-1f-6jJ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="carLocation" destination="mEZ-5G-jg6" id="8RQ-5N-R6R"/>
+                        <outlet property="mapView" destination="bVP-R9-z9B" id="D2q-iX-pw9"/>
+                        <outlet property="orbit" destination="qmJ-lJ-Dfd" id="iIc-mm-8NB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Get Car Button.png" width="135" height="79"/>
+        <image name="background.png" width="640" height="1136"/>
+        <image name="current location.png" width="90" height="89"/>
+        <image name="logo.png" width="415" height="137"/>
+        <image name="map.png" width="115" height="95"/>
+        <image name="orbit.png" width="594" height="594"/>
+        <image name="set car button.png" width="133" height="80"/>
+    </resources>
 </document>
